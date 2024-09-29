@@ -36,3 +36,9 @@ module "vpc" {
 
   tags = local.tags
 }
+
+module "security_groups" {
+  source = "./module/security_group"
+  vpc_id = module.vpc.vpc_id
+  
+}
