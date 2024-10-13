@@ -154,15 +154,6 @@ output "natgw_interface_ids" {
 }
 
 ################################################################################
-# Egress Only Gateway
-################################################################################
-
-output "egress_only_internet_gateway_id" {
-  description = "The ID of the egress only Internet Gateway"
-  value       = try(aws_egress_only_internet_gateway.this[0].id, null)
-}
-
-################################################################################
 # Default VPC
 ################################################################################
 

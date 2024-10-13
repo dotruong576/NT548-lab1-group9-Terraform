@@ -124,11 +124,6 @@ output "igw_arn" {
   value       = module.vpc.igw_arn
 }
 
-output "egress_only_internet_gateway_id" {
-  description = "The ID of the egress only Internet Gateway"
-  value       = module.vpc.egress_only_internet_gateway_id
-}
-
 output "default_vpc_id" {
   description = "The ID of the Default VPC"
   value       = module.vpc.default_vpc_id
